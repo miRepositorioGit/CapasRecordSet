@@ -1,0 +1,22 @@
+<!--LibrosVistaLista.txt    LibrosVista.php lista es un archivo que renderiza el RecorSet de la petición URL por omisión, renderiza un arreglo asociaivo $data-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biblioteca</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <ul>
+  <?php /*value=$data[key][key] es un arreglo asociativo*/
+  	print "<h1>   Biblioteca por omisión. </h1>  "."<br>";
+	for ($i=0; $i < count($data); $i++)
+		{ 
+		  print "<li>"."titulo:".$data[$i]["titulo"]."</li>";
+		  print "<li>"."autor :".$data[$i]["autor"]."</li>";
+		  print "<li>"."editorial :".$data[$i]["editorial"]."</li>";
+		  print "<br>";
+		}
+  ?>
+  </ul>
+</body>
+</html>

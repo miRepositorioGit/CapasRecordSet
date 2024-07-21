@@ -1,0 +1,63 @@
+muestra la diferencia entre 
+
+
+$row=mysqli_fetch_assoc($r) //arreglos asociados ("key"=>"value")
+
+$row=
+array(5) { ["id"]=> string(1) "1" ["titulo"]=> string(21) "El dinero es mi amigo" ["autor"]=> string(9) "Phil Laut" ["editorial"]=> string(20) "Grupo Editorial Tomo" ["url"]=> string(2) " "} 
+array(5) { ["id"]=> string(1) "2" ["titulo"]=> string(12) "Saber Gastar" ["autor"]=> string(22) "Gianco Abundiz Cabrero" ["editorial"]=> string(7) "Aguilar" ["url"]=> string(2) " "}
+array(5) { ["id"]=> string(1) "3" ["titulo"]=> string(23) "Tu primer millón" ["autor"]=> string(21) "Pedro Osvaldo Ramirez" ["editorial"]=> string(6) "Porrua" ["url"]=> string(0) ""} 
+array(5) { ["id"]=> string(1) "4" ["titulo"]=> string(41) "Los diez secretos de la riqueza abundante" ["autor"]=> string(15) "Adam J. Jackson" ["editorial"]=> string(5) "Sirio" ["url"]=> string(0) "" } 
+array(5) { ["id"]=> string(1) "5" ["titulo"]=> string(32) "El millonario instantáneo" ["autor"]=> string(12) "Mark Fisher " ["editorial"]=> string(14) "Empresa Activa" ["url"]=> string(0) "" }
+array(5) { ["id"]=> string(1) "6" ["titulo"]=> string(27) "Piense y hágase rico" ["autor"]=> string(13) "Napoleon Hill" ["editorial"]=> string(6) "Amazon" ["url"]=> string(0) "" }
+array(5) { ["id"]=> string(1) "7" ["titulo"]=> string(38) "El hombre más rico de Babilonia" ["autor"]=> string(21) "George Samuel Clason " ["editorial"]=> string(8) "Obelisco" ["url"]=> string(0) "" }
+array(5) { ["id"]=> string(1) "8" ["titulo"]=> string(23) "Padre rico, padre pobre" ["autor"]=> string(15) "Robert Kiyosaki" ["editorial"]=> string(7) "Aguilar" ["url"]=> string(0) "" }
+
+
+
+
+array_push($data,$row);//inserta elementos al final de un array
+
+$data=  //arreglo de arreglos asociados indexados por entero «KEY_int»
+array(8) { 
+//KEY_int		  KEY_string         VALUE_string  
+ [0]=> array(5) { ["id"]=> string(1) "1" ["titulo"]=> string(21) "El dinero es mi amigo" ["autor"]=> string(9) "Phil Laut" ["editorial"]=> string(20) "Grupo Editorial Tomo" ["url"]=> string(2) " " }
+ [1]=> array(5) { ["id"]=> string(1) "2" ["titulo"]=> string(12) "Saber Gastar" ["autor"]=> string(22) "Gianco Abundiz Cabrero" ["editorial"]=> string(7) "Aguilar" ["url"]=> string(2) " " } 
+ [2]=> array(5) { ["id"]=> string(1) "3" ["titulo"]=> string(23) "Tu primer millón" ["autor"]=> string(21) "Pedro Osvaldo Ramirez" ["editorial"]=> string(6) "Porrua" ["url"]=> string(0) "" } 
+ [3]=> array(5) { ["id"]=> string(1) "4" ["titulo"]=> string(41) "Los diez secretos de la riqueza abundante" ["autor"]=> string(15) "Adam J. Jackson" ["editorial"]=> string(5) "Sirio" ["url"]=> string(0) "" }
+ [4]=> array(5) { ["id"]=> string(1) "5" ["titulo"]=> string(32) "El millonario instantáneo" ["autor"]=> string(12) "Mark Fisher " ["editorial"]=> string(14) "Empresa Activa" ["url"]=> string(0) "" }
+ [5]=> array(5) { ["id"]=> string(1) "6" ["titulo"]=> string(27) "Piense y hágase rico" ["autor"]=> string(13) "Napoleon Hill" ["editorial"]=> string(6) "Amazon" ["url"]=> string(0) "" } 
+ [6]=> array(5) { ["id"]=> string(1) "7" ["titulo"]=> string(38) "El hombre más rico de Babilonia" ["autor"]=> string(21) "George Samuel Clason " ["editorial"]=> string(8) "Obelisco" ["url"]=> string(0) "" } 
+ [7]=> array(5) { ["id"]=> string(1) "8" ["titulo"]=> string(23) "Padre rico, padre pobre" ["autor"]=> string(15) "Robert Kiyosaki" ["editorial"]=> string(7) "Aguilar" ["url"]=> string(0) "" } 
+ }
+ 
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Biblioteca</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <ul>
+  <?php /*value=$data[key][key] es un arreglo asociativo*/
+  print $data[2]["titulo"];
+		print "<h1>   Biblioteca por omisión. </h1>  "."<br>";
+		
+		
+    for ($i=0; $i < count($data); $i++)
+	{ 
+      print "<li>"."titulo:".$data[$i]["titulo"]."</li>";
+	  print "<li>"."autor :".$data[$i]["autor"]."</li>";
+	  print "<li>"."editorial :".$data[$i]["editorial"]."</li>";
+	  print "<br>";
+    }
+  ?>
+  </ul>
+</body>
+</html>
+ 
+ en print $data[2]["titulo"];
+ 
+ https://www.php.net/manual/es/function.mysql-fetch-assoc.php

@@ -1,0 +1,7 @@
+  /*imprime $datos en consola*/
+  public function debug_to_console($datos)
+  {
+		$output=$datos;
+		if (is_array($output)){	$output = implode(',', $output);}
+		echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+	}
