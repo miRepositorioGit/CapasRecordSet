@@ -7,4 +7,4 @@
 
 ![capasModeloVistaControlador](https://github.com/miRepositorioGit/CapasRecordSet/blob/main/public/img/tablaLibros.PNG "modelo en capascon Php")
 
-![bdTabla](/img/bdTabla.PNG "base datos:libreria tabla:libros ")
+![bdTabla](https://github.com/miRepositorioGit/CapasRecordSet/blob/main/public/img/bdTabla.PNG "base datos:libreria tabla:libros ")
