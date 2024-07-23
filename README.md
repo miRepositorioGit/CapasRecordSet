@@ -5,6 +5,6 @@
 - Renderiza en lista o tabla un RecordSet de datos de una tabla en base de datos.
 
 
-![capasModeloVistaControlador](/img/capasModeloVistaControlador.JPG "modelo en capascon Php")
+![capasModeloVistaControlador](https://github.com/miRepositorioGit/CapasRecordSet/blob/main/public/img/tablaLibros.PNG "modelo en capascon Php")
 
 ![bdTabla](/img/bdTabla.PNG "base datos:libreria tabla:libros ")
